@@ -1,0 +1,59 @@
+load block success!
+start query
+optim query Boolean AND
+1 block bits: 00000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001
+range block_bits: 00000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000100000000000000010000000000000001
+some entrys: 
+1526849360 05-20 20:49:20.801  2235  2481 E HwSystemManager: LeisureTrafficSetting:result is empty
+1526849360 05-20 20:49:20.813  2235  2481 E HwSystemManager: TrafficStatisticsInfo:result is empty
+result LG_FILE number: 1
+result entrys number: 2
+block query time: 0.62ms
+tx query time: 0.397ms
+entry query time: 0.231ms
+block VO size: 4.87988KB
+tx VO size: 3.33496KB
+entry VO size: 2.30859KB
+all query time: 1.25ms
+all VO size: 10.52KB
+
+optim query Boolean OR
+1 block bits: 00000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001
+range block_bits: 00000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000100000000000000010000000000000001
+some entrys: 
+1526849360 05-20 20:49:20.801  2235  2481 E HwSystemManager: LeisureTrafficSetting:result is empty
+1526849360 05-20 20:49:20.811  2235  2481 I HwSystemManager: NatTrafficNotifyService:delta byte = 0 no traffic delta = 0Traffic state is 301
+1526849360 05-20 20:49:20.812  2235  2481 E SQLiteLog: (1) 
+1526849360 05-20 20:49:20.813  2235  2481 W HwSystemManager: IDataBaseHelper:/query :  operate DB faild ! no such table: trafficstatistics (Sqlite code 1): , while compiling: SELECT DISTINCT imsi, type, data, recordtime, month FROM trafficstatistics WHERE month = ? and imsi = ? and type = ?, (OS error - 2:No such file or directory)
+1526849360 05-20 20:49:20.813  2235  2481 E HwSystemManager: TrafficStatisticsInfo:result is empty
+result LG_FILE number: 4
+result entrys number: 1156
+block query time: 0.33ms
+tx query time: 3.65ms
+entry query time: 3.98ms
+block VO size: 4.88KB
+tx VO size: 3.37KB
+entry VO size: 9.23KB
+all query time: 7.96ms
+all VO size: 17.48KB
+
+optim query Boolean NOT
+1 block bits: 00000000000000010000000000000001000000000000000100000000000000010000000000000001000000000000000100000000000000010000000000000001
+range block_bits: 00000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000100000000000000010000000000000001
+some entrys: 
+1526849360 05-20 20:49:20.806   860  1083 D asd     : [asd_proc_hal_data],hal data soundness: L[212],R[238]
+1526849360 05-20 20:49:20.808  1714 27516 I WindowManger_visibility: Relayout Window{9688933 u0 NavigationBar}: viewVisibility=0 req=720x72 WM.LayoutParams{(0,0)(fillxfill) sim=#20 ty=2019 fl=#1840068 hwFlags=#0 isEmuiStyle=0 statusBarColor=#0 navigationBarColor=#0 fmt=-3}
+1526849360 05-20 20:49:20.809  1714 27511 I ActivityManager_broadcast: dispatch ordered broadcast [bgkeyapp] BroadcastRecord{2e0874e u0 ALARM_ACTION(5925)}, has 1 receivers
+1526849360 05-20 20:49:20.811  5833  8036 I BetaClub: [StoreProgressUtils.getIncompleteUploadTask] cursor.getCount(): 215
+1526849360 05-20 20:49:20.815  2221  2221 W HwLockScreenPanel: Handle message: 4
+result LG_FILE number: 1
+result entrys number: 1759
+block query time: 0.30ms
+tx query time: 16.90ms
+entry query time: 4.89ms
+block VO size: 4.81KB
+tx VO size: 3.33KB
+entry VO size: 2.31KB
+all query time: 22.09ms
+all VO size: 10.46KB
+

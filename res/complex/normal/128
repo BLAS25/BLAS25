@@ -1,0 +1,22 @@
+load block success!
+start query
+normal query Boolean AND
+range block_bits: 00000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000001100000000000000110000000000000011
+block_bits: 00000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000100000000000000010000000000000001
+some entrys: 
+1526849360 05-20 20:49:20.801  2235  2481 E HwSystemManager: LeisureTrafficSetting:result is empty
+1526849360 05-20 20:49:20.811  2235  2481 I HwSystemManager: NatTrafficNotifyService:delta byte = 0 no traffic delta = 0Traffic state is 301
+1526849360 05-20 20:49:20.812  2235  2481 E SQLiteLog: (1) 
+1526849360 05-20 20:49:20.813  2235  2481 W HwSystemManager: IDataBaseHelper:/query :  operate DB faild ! no such table: trafficstatistics (Sqlite code 1): , while compiling: SELECT DISTINCT imsi, type, data, recordtime, month FROM trafficstatistics WHERE month = ? and imsi = ? and type = ?, (OS error - 2:No such file or directory)
+1526849360 05-20 20:49:20.813  2235  2481 E HwSystemManager: TrafficStatisticsInfo:result is empty
+result LG_FILE number: 4
+result entrys number: 1156
+block query time: 0.314ms
+tx query time: 5.244ms
+entry query time: 3.54ms
+block VO size: 3.48828KB
+tx VO size: 6.57617KB
+entry VO size: 10.1641KB
+all query time: 9.10ms
+all VO size: 20.23KB
+
