@@ -11,8 +11,9 @@ The project is the experimental code for the paper titled "BLAS: A Hybrid-Storag
  
 ## Usage
 1. Download the code to your directory.
-2. Compile [crypto++](https://github.com/weidai11/cryptopp) and [boost](https://www.boost.org/). And you maybe need to modify Makefile to adapt your library file path.
-3. Excute the code `make clean && make` and will generate executable file `main` in your directory.
+2. Download [data.zip](https://zenodo.org/records/13163807/files/data.zip?download=1)、[db.zip](https://zenodo.org/records/13163807/files/db.zip?download=1) and [else.zip](https://zenodo.org/records/13163807/files/else.zip?download=1). In the root directory, unzip the file and name it according to the compressed package name.
+3. Compile [crypto++](https://github.com/weidai11/cryptopp) and [boost](https://www.boost.org/). And you maybe need to modify Makefile to adapt your library file path.
+4. Excute the code `make clean && make` and will generate executable file `main` in your directory.
 
 ## Contributing
 
